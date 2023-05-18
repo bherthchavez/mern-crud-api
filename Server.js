@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 mongoose.set("strictQuery", false);
 mongoose
-  .connect('mongodb://127.0.0.1:27017/todoCrud')
+  .connect('mongodb+srv://bherthDev:duLVkqkjUkLwoI4U@akgcluster.dzexdip.mongodb.net/todoCrud?retryWrites=true&w=majority') //mongodb://127.0.0.1:27017/todoCrud
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
 
